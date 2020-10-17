@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Test</title>
+</head>
+<body>
+  <div class="main">
+    <div class="form">
+      <p class="description-text">Enter a number to get all words, which longer than this number, using filter by length. If you want to get some strings which include your substring, you should use filter by substring. Let's try it:</p>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <input class="checkbox" type="checkbox" aria-label="Checkbox for following text input" onchange="changeCheckbox()">
+          </div>
+        </div>
+        <input type="text" class="form-control" aria-label="Text input with checkbox">
+      </div>
+      <div class="btn-actions">
+        <button type="button" class="btn btn-primary" onclick="filterByLength()">Filter by length</button>
+        <button type="button" class="btn btn-secondary" onclick="filterBySubstring()">Filter by substring</button>
+      </div>
+      
+    </div>
+
+    <div class="load"></div>
+    <div id="resultBlock">
+      <p class="result-text">
+          Result:
+      </p>
+    </div>
+  </div>
+<script src="./script.js"></script>  
+</body>
+</html>
