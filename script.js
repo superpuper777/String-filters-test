@@ -29,14 +29,10 @@ function filterByLength() {
       "<br>"
     );
     if (sortedData.length == 0) {
-      let resultItem = document.createElement('p');
-      resultItem.innerHTML = "Don't have a length of the word more than" + " " + inputValue;
-      resultParent.appendChild(resultItem);
+      document.querySelector("#resultBlock p").innerHTML = "Don't have a length of the word more than" + " " + inputValue;
     };
   } else {
-    let resultItem = document.createElement('p');
-    resultItem.innerHTML = "Enter only a number, please";
-    resultParent.appendChild(resultItem);
+    document.querySelector("#resultBlock p").innerHTML = "Enter only a number, please";
   };
 };
 
@@ -49,9 +45,7 @@ function filterBySubstring() {
       "<br>"
     );
     if (sortedData.length == 0) {
-      let resultItem = document.createElement('p');
-      resultItem.innerHTML = "Don't have a string with" + " " + inputValue;
-      resultParent.appendChild(resultItem);
+      document.querySelector("#resultBlock p").innerHTML = "Don't have a string with" + " " + inputValue;
     };
   } else {
     sortedData = this.data.filter(x =>
@@ -61,9 +55,7 @@ function filterBySubstring() {
       "<br>"
     );
     if (sortedData.length == 0) {
-      let resultItem = document.createElement('p');
-      resultItem.innerHTML = "Don't have a string with" + " " + inputValue;
-      resultParent.appendChild(resultItem);
+      document.querySelector("#resultBlock p").innerHTML = "Don't have a string with" + " " + inputValue;
     };
   };
 };
