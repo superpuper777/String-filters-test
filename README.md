@@ -19,4 +19,4 @@
 
 ---
 
-Сайт расположен ![здесь](https://superpuper777.github.io/String-filters-test/)
+Сайт расположен [здесь](https://superpuper777.github.io/String-filters-test/)
